@@ -13,11 +13,11 @@ def sort_array_char_count(strings)
 end
 
 def swap_elements(swap)
-  swap.sort do |b, c|
-    temp = b
-    b = c
-    c = temp
-    swapped = b, c
+  swap.sort do |a, b|
+    temp = a
+    a = b
+    b = temp
+    swapped = a, b
   end
   return swapped
 end
@@ -49,6 +49,5 @@ end
 def add_s(words)
   words.each do |element|
     element << "s"
-    element.reject {|x|
   end
 end
