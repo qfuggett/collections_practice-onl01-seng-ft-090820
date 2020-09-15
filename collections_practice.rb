@@ -12,7 +12,7 @@ def sort_array_char_count(strings)
   end
 end
 
-def swap_elements(swap)  #shift out 1st element, swap 2 elements, pop back in front
+def swap_elements(swap)  #shift out 1st element, swap 2 elements, unshift back to front
   first_element = swap.shift
   swap.sort do |a, b|
     temp = a
@@ -37,12 +37,12 @@ end
 
 def find_a(words)
   words.select do |string|
-    string.start_with?("a")       #returns true for elements passed starting with a
+    string.start_with?("a")       #returns true for elements passed starting with 'a'
   end
 end
 
 def sum_array(numbers)
-  numbers.inject do |numbers, x|      #passes each element and accumulates sequentially
+  numbers.inject do |numbers, x|      #passes each element and accumulates sequentially (one top of one another)
     numbers + x                     
   end
 end
