@@ -49,6 +49,6 @@ end
 def add_s(words)
   words.each do |element|
     element << "s"
-    element.reject {
+    element.reject {|x|
   end
 end
