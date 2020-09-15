@@ -47,7 +47,7 @@ def sum_array(numbers)
 end
 
 def add_s(words)
-  words.delete_at(words.index)
+  words.delete_at(words.index 2)
   words.each do |element|
     element << "s"
   end
