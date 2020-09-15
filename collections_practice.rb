@@ -12,7 +12,7 @@ def sort_array_char_count(strings)
   end
 end
 
-def swap_elements(swap)  #pop out 1st element, swap 2 elements, pop back in front
+def swap_elements(swap)  #shift out 1st element, swap 2 elements, pop back in front
   first_element = swap.shift
   swap.sort do |a, b|
     temp = a
