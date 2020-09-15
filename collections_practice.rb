@@ -49,5 +49,6 @@ end
 def add_s(words)
   words.each do |element|
     element << "s"
+    
   end
 end
