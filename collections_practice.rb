@@ -47,8 +47,9 @@ def sum_array(numbers)
 end
 
 def add_s(words)
-  words.delete_at(1)
+  feet = words.delete_at(1)
   words.each do |element|
     element << "s"
+    element << feet
   end
 end
