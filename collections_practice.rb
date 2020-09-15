@@ -13,11 +13,11 @@ def sort_array_char_count(strings)
 end
 
 def swap_elements(swap)
-  swap.sort do |a, b|
-    temp = a
-    a = b
-    b = temp
-    swapped = a, b
+  swap.sort do |b, c|
+    temp = b
+    b = c
+    c = temp
+    swapped = b, c
   end
   return swapped
 end
