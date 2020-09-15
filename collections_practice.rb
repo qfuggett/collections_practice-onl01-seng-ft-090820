@@ -12,14 +12,15 @@ def sort_array_char_count(strings)
   end
 end
 
-def swap_elements(swap)
+def swap_elements(swap)  #pop out 1st element, swap 2 elements, pop back in front
+  first_element = swap.shift
   swap.sort do |a, b|
     temp = a
     a = b
     b = temp
     swapped = a, b
   end
-  return swapped
+  return swapped.unshift("#{first_element}")
 end
 
 def reverse_array(numbers)
