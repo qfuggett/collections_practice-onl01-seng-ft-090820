@@ -20,7 +20,7 @@ def swap_elements(swap)  #pop out 1st element, swap 2 elements, pop back in fron
     b = temp
     swapped = a, b
   end
-  return swapped.unshift("#{first_element}")
+  return swapped
 end
 
 def reverse_array(numbers)
