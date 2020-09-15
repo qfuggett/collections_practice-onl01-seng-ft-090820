@@ -48,7 +48,6 @@ end
 
 def add_s(words)
   words.each do |element|
-    remove = words.reject! {|w| w = words[1]}
     element << "s"
     element << remove
   end
