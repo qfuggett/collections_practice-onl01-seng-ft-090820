@@ -14,7 +14,7 @@ end
 
 def swap_elements(swap)  #shift out 1st element, swap 2 elements, unshift back to front
   swap.each do |element|
-    swapped = swap[1], swap[2] = swap[2], swap[1]
+    swap[1], swap[2] = swap[2], swap[1]
      
   end
 end
