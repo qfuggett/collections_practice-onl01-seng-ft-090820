@@ -14,15 +14,14 @@ end
 
 def swap_elements(swap)  #shift out 1st element, swap 2 elements, unshift back to front
   first_element = swap.shift
-  new_array = [ ]
   swap.sort do |a, b|
     temp = a
     a = b
     b = temp
     swapped = a, b
-    new_array << swapped
+    
   end
-  return new_array.unshift("#{first_element}")
+  return swapped.unshift("#{first_element}")
 end
 
 def reverse_array(numbers)
