@@ -50,8 +50,7 @@ def add_s(words)
   feet = words.delete_at(1)
   words.each do |element|
     element << "s"
-    new_array = element
+    element.insert(1, feet)
   end
-  new_array.insert(2, feet)
 
 end
