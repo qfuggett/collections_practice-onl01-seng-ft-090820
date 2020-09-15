@@ -19,6 +19,7 @@ def swap_elements(swap)  #pop out 1st element, swap 2 elements, pop back in fron
     a = b
     b = temp
     swapped = a, b
+    swapped.unshift("#{first_element")
   end
   return swapped
 end
